@@ -44,7 +44,7 @@ public class RetailStepDefinition extends Base {
 	 */
 	@When("User enter username {string} and password {string}")
 	public void user_enter_username_and_password(String email, String password) {
-		retailpageobj.enterEmail("zoe19@gmail.com");
+		retailpageobj.enterEmail("zoe100@gmail.com");
 		retailpageobj.enterpassword("12345");
 		logger.info("User enter username and password successfully.");
 	}

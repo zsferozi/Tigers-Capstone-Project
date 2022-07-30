@@ -11,37 +11,37 @@ import utilities.Utils;
 
 public class DesktopPageStepDefinition extends Base {
 
-	DesktopPageObject desktopObj = new DesktopPageObject();
+	DesktopPageObject desktoppageobject = new DesktopPageObject();
 
 	@When("User click on Desktops tab")
 	public void user_click_on_desktops_tab() {
-		desktopObj.clickOnDesktopTab();
+		desktoppageobject.clickOnDesktopTab();
 		logger.info("User click on desktops tab successfully.");
 	}
 
 	@When("User click on Show all desktops")
 	public void user_click_on_show_all_desktops() {
-		desktopObj.clickOnShowAllDesktop();
+		desktoppageobject.clickOnShowAllDesktop();
 		logger.info("User click on Show all desktops sucessfully.");
 
 	}
 
 	@Then("User should see all items are present in Desktop page")
 	public void user_should_see_all_items_are_present_in_desktop_page() {
-		desktopObj.desktopItems();
+		desktoppageobject.desktopItems();
 		logger.info("User was able to see all the items are present in desktop.");
 
 	}
 
 	@When("User click  ADD TO CART option on HP LP3065item")
 	public void user_click_add_to_cart_option_on_hp_lp3065item() {
-		desktopObj.clickOnAddToCartOption();
+		desktoppageobject.clickOnAddToCartOption();
 		logger.info("LP3065 item was add to cart successfully.");
 	}
 
 	@When("User select quantity {string}")
 	public void user_select_quantity(String string) {
-		desktopObj.addOneItemToCart();
+		desktoppageobject.addOneItemToCart();
 		logger.info("User successfully add one item to the cart");
 
 	}
@@ -49,15 +49,15 @@ public class DesktopPageStepDefinition extends Base {
 	// scenario 3
 	@When("User click  ADD TO CART option on Canon EOS 5D item")
 	public void user_click_add_to_cart_option_on_canon_eos_5d_item() {
-		desktopObj.clickAddingCameraToCart();
+		desktoppageobject.clickAddingCameraToCart();
 		logger.info("User click Canon EOS 5D item.");
 
 	}
 
 	@When("User select color from dropdown Red")
 	public void user_select_color_from_dropdown_red() {
-		desktopObj.clickOnSelectOption();
-		desktopObj.clickOnRedValue();
+		desktoppageobject.clickOnSelectOption();
+		desktoppageobject.clickOnRedValue();
 		logger.info("User select Red color camera successfully.");
 
 	}
@@ -65,14 +65,14 @@ public class DesktopPageStepDefinition extends Base {
 
 	@When("User click on Canon EOS 5D item")
 	public void user_click_on_canon_eos_5d_item() {
-		desktopObj.clickOnCanonCameralink();
+		desktoppageobject.clickOnCanonCameralink();
 		logger.info("User click on Canon Camera sucessfully.");
 
 	}
 
 	@When("User click on write a review link")
 	public void user_click_on_write_a_review_link() {
-		desktopObj.clickOnReviewLink();
+		desktoppageobject.clickOnReviewLink();
 		logger.info("User click on review link successfully.");
 
 	}
@@ -86,9 +86,9 @@ public class DesktopPageStepDefinition extends Base {
 		 * multiple rows of data can be pass in the same step.
 		 */
 		List<Map<String, String>> reviewInfo = dataTable.asMaps(String.class, String.class);
-		desktopObj.enterYourName(reviewInfo.get(0).get("yourname"));
-		desktopObj.enterYourReview(reviewInfo.get(0).get("yourReview"));
-		desktopObj.selectRating(reviewInfo.get(0).get("Rating"));
+		desktoppageobject.enterYourName(reviewInfo.get(0).get("yourname"));
+		desktoppageobject.enterYourReview(reviewInfo.get(0).get("yourReview"));
+		desktoppageobject.selectRating(reviewInfo.get(0).get("Rating"));
 		Utils.
 		logger.info("user write a review successfully.");
 
@@ -96,14 +96,14 @@ public class DesktopPageStepDefinition extends Base {
 
 	@When("User click on Continue Button")
 	public void user_click_on_continue_button() {
-		desktopObj.clickOnContinueButton();
+		desktoppageobject.clickOnContinueButton();
 		logger.info("User clicked on continue button sucessfully.");
 
 	}
 
 	@Then("User should see a message with {string}")
 	public void user_should_see_a_message_with(String string) {
-		desktopObj.getSuccessReviewMessage();
+		desktoppageobject.getSuccessReviewMessage();
 		logger.info("User verify success Message of reviewing successfully.");
 
 	}

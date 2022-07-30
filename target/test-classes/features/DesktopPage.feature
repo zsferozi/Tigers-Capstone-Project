@@ -1,4 +1,4 @@
-@DesktopPage
+@Smoke @DesktopPage
 Feature: Desktops Tab
 
   Background: 
@@ -30,6 +30,6 @@ Feature: Desktops Tab
     And User click on write a review link
     And user fill the review information with below information
       | yourname | yourReview                      | Rating |
-      | Zahal Ferozi     | It is a bad and tricky website. |      3 |
+      | Zahal Ferozi     | This is a good website for student to do automation testing. |      5 |
     And User click on Continue Button
     Then User should see a message with 'Thank you for your review. It has been submitted to the webmaster for approval.'

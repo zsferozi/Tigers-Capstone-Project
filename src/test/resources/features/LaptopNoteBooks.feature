@@ -1,4 +1,4 @@
-@LaptopAndNoteBooks
+@Smoke @LaptopAndNoteBooks
 Feature: Laptop & NoteBooks
  
   Background: 

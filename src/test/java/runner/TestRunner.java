@@ -11,7 +11,7 @@ import io.cucumber.junit.Cucumber;
 			//make sure when you type classpath:features, all letters are lower case
 			features = "classpath:features",
 			glue = "step.definition",
-			tags = "@RetailPage",
+			tags = "@Smoke",
 			dryRun = false,			
 			strict= true,
 			monochrome = true,

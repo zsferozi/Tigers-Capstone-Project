@@ -1,4 +1,4 @@
-@RetailPage
+@Smoke @RetailPage
 Feature: Retail Page
 
   Background: 
@@ -34,6 +34,6 @@ Feature: Retail Page
     When User click on 'Edit your account information' linkk
     And User modify below information
       | firstname | lastName | email               | telephone |
-      | Adam      | Ferozi   | zahal503@gmail.com | 572350298 |
+      | Adam      | Ferozi   | zahal902@gmail.com | 572350298 |
     And User click on continue button1
     Then User should see a message 'Success: Your account has been successfully updated.'
